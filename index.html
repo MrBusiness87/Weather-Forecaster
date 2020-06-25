@@ -15,26 +15,40 @@
       <div class='four columns'>
         <label for='searchCity'>Type in your City:</label>
         <input class='u-full-width' type='searchACity' id='inputCity'>
-        <input id='searchCity' type='submit' value='search'>
+        <input id='searchCity' type='submit' value='SEARCH'>
+        <ul id="recentlySearchedCities"></ul>
       </div>
-      <table class='u-full-width'>
-        <tbody>
-          <tr>
-            <td>
-              <label for='cityName'>City:</label>
-              <div class='cityName'></div>
-            </td>
-            <td>
-              <label for='currentDate'>Date:</label>
-              <div class='currentDate'></div>
-            </td>
-            <td>
-              <label for='icon'>Symbol:</label>
-              <div id='icon'><img id='wicon' src=''></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="seven columns">
+        <table class='u-full-width'>
+          <tbody>
+            <tr>
+              <td>
+                <label for='cityName'>City:</label>
+                <div class='cityName'></div>
+              </td>
+              <td>
+                <label for='currentDate'>Date:</label>
+                <div class='currentDate'></div>
+              </td>
+              <td>
+                <br>
+                <label for='icon'>Day:</label>
+                <div id='icon'><img id='wicon' src=''></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <div class="temp"></div>
+        <br>
+        <div class="humidity"></div>
+        <br>
+        <div class="wind"></div>
+        <br>
+        <div class="uv"></div>
+        <p class="uvIcon"></p>
+      </div>
+      <div class="row"></div>
       <h3>Five Day Forecast</h3>
       <div class='two columns'>
         <div class='card'>
@@ -80,6 +94,9 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://openweathermap.org"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
