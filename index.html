@@ -8,18 +8,18 @@
   <title>Weather-Homework 6</title>
 </head>
 
-<body>
-  <h1>Weather Forecast</h1>
+<body><br><br>
+  <h1>[{(-----Weather Forecast-----)}]</h1>
   <div class='container'>
     <div class='row'>
       <div class='four columns'>
-        <label for='searchCity'>Type in your City:</label>
-        <input class='u-full-width' type='searchACity' id='inputCity'>
+        <label for='searchCity' style="font-size: 20px">Type in your City:</label>
+        <input class='u-full-width1' type='searchACity' id='inputCity'>
         <input id='searchCity' type='submit' value='SEARCH'>
         <ul id="recentlySearchedCities"></ul>
       </div>
       <div class="seven columns">
-        <table class='u-full-width'>
+        <table class='u-full-width2'>
           <tbody>
             <tr>
               <td>
@@ -32,24 +32,26 @@
               </td>
               <td>
                 <br>
-                <label for='icon'>Day:</label>
+                <label for='icon'>Sky:</label>
                 <div id='icon'><img id='wicon' src=''></div>
               </td>
             </tr>
           </tbody>
         </table>
         <br>
-        <div class="temp"></div>
+        <div class="temp" style="font-size: 30px"></div>
         <br>
-        <div class="humidity"></div>
+        <div class="humidity" style="font-size: 30px"></div>
         <br>
-        <div class="wind"></div>
+        <div class="wind" style="font-size: 30px"></div>
         <br>
-        <div class="uv"></div>
-        <p class="uvIcon"></p>
+        <div class="uv" style="font-size: 30px"></div>
+        <p class="uvIcon" style="font-size: 30px"></p>
       </div>
       <div class="row"></div>
-      <h3>Five Day Forecast</h3>
+      <header>
+        <h3>Five Day Forecast</h3>
+      </header>
       <div class='two columns'>
         <div class='card'>
           <div id='date-1'></div>

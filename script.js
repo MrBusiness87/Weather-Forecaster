@@ -99,21 +99,32 @@ window.onload = function () {
   inputCity.value = localStorage.getItem("City Name");
 }
 
-
 $("#searchCity").on("click", function (event) {
   event.preventDefault();
   var inputCity = $("#inputCity").val().trim();
   localStorage.setItem("City Name", inputCity);
-  var node = document.createElement("button");
-  var textnode = document.createTextNode(inputCity);
-  node.appendChild(textnode);
-  document.getElementById("recentlySearchedCities").appendChild(node);
+  var prevCityNode = $('<button/>').text(inputCity);
+  prevCityNode.on('click', function (event) {
+    event.preventDefault();
+    var prevCity = $(this).text();
+    searchCity(prevCity);
+  });
+  $('#recentlySearchedCities').append(prevCityNode).end();
   searchCity(inputCity);
-});
+  // $("#searchCity").on("click", function (event) {
+  //   event.preventDefault();
+  //   var inputCity = $("#inputCity").val().trim();
+  //   localStorage.setItem("City Name", inputCity);
+  //   var node = document.createElement("button");
+  //   var textnode = document.createTextNode(inputCity);
+  //   node.appendChild(textnode);
+  //   document.getElementById("recentlySearchedCities").appendChild(node);
+  //   searchCity(inputCity);
 
-$(this).on("click", "button", function (event) {
-  event.preventDefault();
-  var previousCity = $("button");
-  searchCity(inputCity);
-  console.log(inputCity)
+  // $(this).on("click", "button", function (event) {
+  //   event.preventDefault();
+  //   var previousCity = $("button");
+  //   $(this).append(inputCity);
+  //   searchCity(inputCity);
+  //   console.log(inputCity)
 });

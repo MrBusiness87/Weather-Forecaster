@@ -6,25 +6,28 @@ body {
 }
 
 h1 {
-  width: 100%;
+  width: max-content;
   margin: auto auto;
   padding: 20px;
   background-color: DarkGreen;
-  color: white;
+  color: yellow;
   font-weight: bold;
   text-align: center;
 }
 
 h3 {
+  text-decoration: underline;
   text-align: center;
-  font-size: 40px;
+  font-size: 65px;
+  color: yellow;
 }
 
 button {
+  font-size: 25px;
   width: 90%;
   align-content: center;
   background-color: darkgreen;
-  color: white;
+  color: yellow;
 }
 
 .card {
@@ -32,11 +35,12 @@ button {
   padding: 5px;
   background-color: darkgreen;
   box-shadow: 0 4px 8px 0 black;
-  color: white;
+  color: yellow;
 }
 
 #searchCity {
   color: black;
+  font-size: 20px;
 }
 
 td {
@@ -57,17 +61,19 @@ img {
 
 .four {
   max-width: 400px;
-  background-color: lightgray;
-  opacity: 0.75;
   padding: 20px;
   margin-left: 60px;
   float: left;
   box-sizing: border-box;
+  background-color: lightgreen;
+  opacity: 0.8;
 }
 
 .seven {
   max-width: 400px;
   padding: 20px;
+  background-color: lightgreen;
+  opacity: 0.8;
 }
 
 .uvIcon {
@@ -76,8 +82,9 @@ img {
   border-radius: 5px;
 }
 
-.u-full-width {
-  width: 600px;
+.u-full-width1 {
+  background-color: yellow;
+  width: 360px;
   height: 35px;
 }
 
@@ -115,7 +122,7 @@ input[type="button"] {
   box-sizing: border-box;
 }
 
-.u-full-width {
+.u-full-width2 {
   width: 100%;
   box-sizing: border-box;
 }
