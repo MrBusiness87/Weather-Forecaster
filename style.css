@@ -1,8 +1,8 @@
 body {
   background: url(./Assets/Sun-behind-cloud1.jpg);
   background-repeat: no-repeat;
+  height: 1200px;
   background-size: cover;
-  align-content: center;
 }
 
 h1 {
@@ -32,7 +32,7 @@ button {
 
 .card {
   width: 100%;
-  padding: 5px;
+  padding: 4px;
   background-color: darkgreen;
   box-shadow: 0 4px 8px 0 black;
   color: yellow;
@@ -76,16 +76,17 @@ img {
   opacity: 0.8;
 }
 
-.uvIcon {
+/* .uvIcon {
   padding: 10px;
   Width: 40px;
   border-radius: 5px;
-}
+} */
 
-.u-full-width1 {
+.search {
   background-color: yellow;
   width: 360px;
   height: 35px;
+  font-size: 20px;
 }
 
 .container {
@@ -101,6 +102,10 @@ img {
   width: 100%;
   float: left;
   box-sizing: border-box;
+}
+
+#recentlySearchedCities button {
+  font-size: 20px;
 }
 
 .button,
@@ -122,12 +127,48 @@ input[type="button"] {
   box-sizing: border-box;
 }
 
-.u-full-width2 {
+.forecast {
   width: 100%;
   box-sizing: border-box;
 }
 
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box;
+@media (max-width: 500px) {
+  h3 {
+    font-size: 28px;
+  }
+
+  .row {
+    margin-left: 10px;
+  }
+
+  #recentlySearchedCities button {
+    margin-left: 0px;
+  }
+
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    margin-left: 180px;
+  }
+
+  .search {
+    width: 200px;
+  }
+
+  .four {
+    padding: 20px;
+    margin-left: 0px;
+  }
+
+  .two {
+    max-width: 70px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  td {
+    font-size: 20px;
+  }
 }

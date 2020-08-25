@@ -65,33 +65,33 @@ function searchCity(weather) {
   })
 };
 
-function getUV(lat, lon) {
-  var apiKey = "7fbb8b1345eeaff09ae91ba040de5772"
-  var uvURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey
-  console.log(uvURL)
-  $.ajax({
-    url: uvURL,
-    method: "GET",
-    dataType: "json"
-  }).then(function (data) {
-    var uvIndex = $(".uv").text("UV Index: ")
-    var uvNumber = $(".uvIcon").text(data[4].value)
+// function getUV(lat, lon) {
+//   var apiKey = "7fbb8b1345eeaff09ae91ba040de5772"
+//   var uvURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey
+//   console.log(uvURL)
+//   $.ajax({
+//     url: uvURL,
+//     method: "GET",
+//     dataType: "json"
+//   }).then(function (data) {
+//     var uvIndex = $(".uv").text("UV Index: ")
+//     var uvNumber = $(".uvIcon").text(data[4].value)
 
-  });
-};
+//   });
+// };
 
-function changeUVColor(uvNumber) {
-  var uvIcon = uvNumber.toFixed(0)
-  if (uvIcon >= 3) {
-    uvIcon.css('background-color', 'green');
-  } else if (uvIcon >= 6) {
-    uvIcon.setAttribute('style', 'background-color: yellow !important');
-  } else if (uvIcon >= 8) {
-    uvIcon.setAttribute('style', 'background-color: orange !important');
-  } else {
-    $(uvIcon).css('background-color', 'red');
-  };
-}
+// function changeUVColor(uvNumber) {
+//   var uvIcon = uvNumber.toFixed(0)
+//   if (uvIcon >= 3) {
+//     uvIcon.css('background-color', 'green');
+//   } else if (uvIcon >= 6) {
+//     uvIcon.setAttribute('style', 'background-color: yellow');
+//   } else if (uvIcon >= 8) {
+//     uvIcon.setAttribute('style', 'background-color: orange');
+//   } else {
+//     $(uvIcon).css('background-color', 'red');
+//   };
+// }
 
 window.onload = function () {
   var searchButton = $("#searchCity");
@@ -111,20 +111,4 @@ $("#searchCity").on("click", function (event) {
   });
   $('#recentlySearchedCities').append(prevCityNode).end();
   searchCity(inputCity);
-  // $("#searchCity").on("click", function (event) {
-  //   event.preventDefault();
-  //   var inputCity = $("#inputCity").val().trim();
-  //   localStorage.setItem("City Name", inputCity);
-  //   var node = document.createElement("button");
-  //   var textnode = document.createTextNode(inputCity);
-  //   node.appendChild(textnode);
-  //   document.getElementById("recentlySearchedCities").appendChild(node);
-  //   searchCity(inputCity);
-
-  // $(this).on("click", "button", function (event) {
-  //   event.preventDefault();
-  //   var previousCity = $("button");
-  //   $(this).append(inputCity);
-  //   searchCity(inputCity);
-  //   console.log(inputCity)
 });
