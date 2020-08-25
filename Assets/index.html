@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather-Homework 6</title>
+  </head>
+
+  <body>
+    <br /><br />
+    <h1>[{(-----Weather Forecast-----)}]</h1>
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <label for="searchCity" style="font-size: 20px;"
+            >Type in your City:</label
+          >
+          <input class="search" type="searchACity" id="inputCity" />
+          <input id="searchCity" type="submit" value="SEARCH" />
+          <ul id="recentlySearchedCities"></ul>
+        </div>
+        <div class="seven columns">
+          <table class="forecast">
+            <tbody>
+              <tr>
+                <td>
+                  <label for="cityName">City:</label>
+                  <div class="cityName"></div>
+                </td>
+                <td>
+                  <label for="currentDate">Date:</label>
+                  <div class="currentDate"></div>
+                </td>
+                <td>
+                  <br />
+                  <label for="icon">Sky:</label>
+                  <div id="icon"><img id="wicon" src="" /></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <div class="temp" style="font-size: 30px;"></div>
+          <br />
+          <div class="humidity" style="font-size: 30px;"></div>
+          <br />
+          <div class="wind" style="font-size: 30px;"></div>
+          <!-- <br />
+          <div class="uv uvIcon" style="font-size: 30px;"></div>
+          <p class="uvIcon" style="font-size: 30px;"></p> -->
+        </div>
+        <div class="row"></div>
+        <header>
+          <h3>Five Day Forecast</h3>
+        </header>
+        <div class="two columns">
+          <div class="card">
+            <div id="date-1"></div>
+            <div id="icon"><img id="wicon1" src="" /></div>
+            <div id="temp-1"></div>
+            <div id="humidity-1"></div>
+          </div>
+        </div>
+        <div class="two columns">
+          <div class="card">
+            <div id="date-2"></div>
+            <div id="icon-2"><img id="wicon2" src="" /></div>
+            <div id="temp-2"></div>
+            <div id="humidity-2"></div>
+          </div>
+        </div>
+        <div class="two columns">
+          <div class="card">
+            <div id="date-3"></div>
+            <div id="icon-3"><img id="wicon3" src="" /></div>
+            <div id="temp-3"></div>
+            <div id="humidity-3"></div>
+          </div>
+        </div>
+        <div class="two columns">
+          <div class="card">
+            <div id="date-4"></div>
+            <div id="icon-4"><img id="wicon4" src="" /></div>
+            <div id="temp-4"></div>
+            <div id="humidity-4"></div>
+          </div>
+        </div>
+        <div class="two columns">
+          <div class="card">
+            <div id="date-5"></div>
+            <div id="icon-5"><img id="wicon5" src="" /></div>
+            <div id="temp-5"></div>
+            <div id="humidity-5"></div>
+          </div>
+        </div>
+        <div class="two columns"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://openweathermap.org"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
