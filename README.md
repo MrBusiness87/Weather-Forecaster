@@ -1,7 +1,7 @@
 # Weather Forecaster
   ## README created by: MrBusiness87
   
-  ![](https://img.shields.io/badge/license-NONE-lightgrey)
+  ![WEATHER THUMB](./Assets/Thumbnail.png)
   
 
   ---
@@ -18,7 +18,7 @@
   
 
   ### Title:
-  [Weather Forecaster]("https://mrbusiness87.github.io/Work-Day-Scheduler/" target="blank")
+  [Weather Forecaster]("https://mrbusiness87.github.io/Work-Day-Scheduler/")
   
 
   ### Description:
