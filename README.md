@@ -17,7 +17,7 @@
   ---
   
 
-  ### Title:
+  ### Title also a Link:
   [Weather Forecaster]("https://mrbusiness87.github.io/Work-Day-Scheduler/")
   
 
@@ -27,7 +27,7 @@
 
   ### Installation:
   The command to install dependencies is: NONE. 
-  Go to the git hub page copy link through git bash onto your computer, use command: <b>git clone git@github.com:MrBusiness87/Work-Day-Scheduler.git</b>. this will install it onto your computer so you can run it locally.
+  Go to the git hub page copy link through git bash onto your computer, use command: <b>git clone git@github.com:MrBusiness87/Work-Day-Scheduler.git</b>. This will install it onto your computer, so you can run it locally.
 
   ### Usage:
   Only to have an application which displays weather on its own page.
