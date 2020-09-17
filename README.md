@@ -18,7 +18,7 @@
   
 
   ### Title:
-  <a href="https://mrbusiness87.github.io/Work-Day-Scheduler/">Weather Forecaster</a>
+  <a href="https://mrbusiness87.github.io/Work-Day-Scheduler/" target="_blank">Weather Forecaster</a>
   
 
   ### Description:
